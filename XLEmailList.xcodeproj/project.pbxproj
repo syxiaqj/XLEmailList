@@ -19,6 +19,9 @@
 		3191C2521980DFBF00DF0E91 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3191C23A1980DFBF00DF0E91 /* UIKit.framework */; };
 		3191C25A1980DFBF00DF0E91 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3191C2581980DFBF00DF0E91 /* InfoPlist.strings */; };
 		3191C25C1980DFBF00DF0E91 /* XLEmailListTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3191C25B1980DFBF00DF0E91 /* XLEmailListTests.m */; };
+		3191C2691980DFFD00DF0E91 /* MainVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 3191C2671980DFFD00DF0E91 /* MainVC.m */; };
+		3191C26A1980DFFD00DF0E91 /* MainVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3191C2681980DFFD00DF0E91 /* MainVC.xib */; };
+		3191C26D1980E06800DF0E91 /* XLEmailListView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3191C26C1980E06800DF0E91 /* XLEmailListView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +51,11 @@
 		3191C2571980DFBF00DF0E91 /* XLEmailListTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "XLEmailListTests-Info.plist"; sourceTree = "<group>"; };
 		3191C2591980DFBF00DF0E91 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		3191C25B1980DFBF00DF0E91 /* XLEmailListTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XLEmailListTests.m; sourceTree = "<group>"; };
+		3191C2661980DFFD00DF0E91 /* MainVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainVC.h; sourceTree = "<group>"; };
+		3191C2671980DFFD00DF0E91 /* MainVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainVC.m; sourceTree = "<group>"; };
+		3191C2681980DFFD00DF0E91 /* MainVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainVC.xib; sourceTree = "<group>"; };
+		3191C26B1980E06800DF0E91 /* XLEmailListView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLEmailListView.h; sourceTree = "<group>"; };
+		3191C26C1980E06800DF0E91 /* XLEmailListView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XLEmailListView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +117,10 @@
 			children = (
 				3191C2451980DFBF00DF0E91 /* AppDelegate.h */,
 				3191C2461980DFBF00DF0E91 /* AppDelegate.m */,
+				3191C2661980DFFD00DF0E91 /* MainVC.h */,
+				3191C2671980DFFD00DF0E91 /* MainVC.m */,
+				3191C2681980DFFD00DF0E91 /* MainVC.xib */,
+				3191C2651980DFEC00DF0E91 /* XLEmailListView */,
 				3191C2481980DFBF00DF0E91 /* Images.xcassets */,
 				3191C23D1980DFBF00DF0E91 /* Supporting Files */,
 			);
@@ -142,6 +154,15 @@
 				3191C2581980DFBF00DF0E91 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3191C2651980DFEC00DF0E91 /* XLEmailListView */ = {
+			isa = PBXGroup;
+			children = (
+				3191C26B1980E06800DF0E91 /* XLEmailListView.h */,
+				3191C26C1980E06800DF0E91 /* XLEmailListView.m */,
+			);
+			path = XLEmailListView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -219,6 +240,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3191C26A1980DFFD00DF0E91 /* MainVC.xib in Resources */,
 				3191C2411980DFBF00DF0E91 /* InfoPlist.strings in Resources */,
 				3191C2491980DFBF00DF0E91 /* Images.xcassets in Resources */,
 			);
@@ -239,8 +261,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3191C2691980DFFD00DF0E91 /* MainVC.m in Sources */,
 				3191C2471980DFBF00DF0E91 /* AppDelegate.m in Sources */,
 				3191C2431980DFBF00DF0E91 /* main.m in Sources */,
+				3191C26D1980E06800DF0E91 /* XLEmailListView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
